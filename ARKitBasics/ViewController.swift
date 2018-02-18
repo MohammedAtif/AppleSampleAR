@@ -37,7 +37,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         // Start the view's AR session with a configuration that uses the rear camera,
         // device position and orientation tracking, and plane detection.
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = [.horizontal, .vertical]
+        configuration.planeDetection = [.horizontal, .horizontal]
         sceneView.session.run(configuration)
 
         // Set a delegate to track the number of plane anchors for providing UI feedback.
